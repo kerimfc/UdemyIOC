@@ -6,35 +6,29 @@ using System.Threading.Tasks;
 
 namespace UdemyIOC.console
 {
-    public class DAL:IDAL
+    public class OracleDAL : IDAL
     {
-        //SQL SERVER dan gelen
         public List<Product> GetProducts()
         {
             return new List<Product>()
             {
                 new Product()
                 {
-                    Id = 1, Name= "Kalem 1", Price=200, Stock=100
+                    Id = 1, Name= "O Kalem 1", Price=200, Stock=100
                 },
                 new Product()
                 {
-                    Id = 2, Name= "Kalem 2", Price=200, Stock=100
+                    Id = 2, Name= "O Kalem 2", Price=200, Stock=100
                 },
                 new Product()
                 {
-                    Id = 3, Name= "Kalem 3", Price=200, Stock=100
+                    Id = 3, Name= "O Kalem 3", Price=200, Stock=100
                 },
                 new Product()
                 {
-                    Id = 4, Name= "Kalem 4", Price=200, Stock=100
+                    Id = 4, Name= "O Kalem 4", Price=200, Stock=100
                 }
             };
-        }
-
-        public int Hesapla()
-        {
-            return 100;
         }
     }
 }

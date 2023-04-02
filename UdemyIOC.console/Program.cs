@@ -3,7 +3,9 @@ using UdemyIOC.console;
 
 Console.WriteLine("Hello, World!");
 
-BL bL = new BL();
+//BL bL = new BL(new DAL());
+
+BL bL = new BL(new OracleDAL());
 
 bL.GetProducts().ForEach(
     product =>
