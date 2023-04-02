@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UdemyIOC.console
 {
-    public class DAL
+    public class DAL:IDAL
     {
 
         public List<Product> GetProducts()
@@ -30,6 +30,11 @@ namespace UdemyIOC.console
                     Id = 4, Name= "Kalem 4", Price=200, Stock=100
                 }
             };
+        }
+
+        public int Hesapla()
+        {
+            return 100;
         }
     }
 }
